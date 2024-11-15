@@ -9,8 +9,6 @@ $('.owl-carousel').owlCarousel({
     navText:['<img src="assets/images/sliders/angle-left-dark.png" style="height: 40px;">','<img src="assets/images/sliders/angle-right-dark.png" style="height: 40px;">'],
     items:1,
     animateOut: 'fadeOut',
-	autoplay:true,
-	autoplayTimeout:5000,
 });
 $('.slide-container').slick({
     arrows: true,
