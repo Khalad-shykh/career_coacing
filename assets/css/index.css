@@ -305,3 +305,8 @@
 .site-map-section .des-wrapper .contact-area p{
 	font-size: 14px;
 }
+.site-map-section .iframe-wrapper
+{
+    width: 100%;
+    height: 100%;
+}

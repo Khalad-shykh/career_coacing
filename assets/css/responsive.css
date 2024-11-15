@@ -138,7 +138,7 @@
 		right: 0;
 		background-color: rgba(0,0,0, .5);
 	}
-	.site-map-section iframe
+	.site-map-section .iframe-wrapper
 	{
 		height: 500px!important;
 	}
