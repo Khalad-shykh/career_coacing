@@ -1,0 +1,307 @@
+
+/*index css*/
+.slider-section
+{
+	overflow: hidden;
+	position: relative;
+}
+.slider-section .owl-carousel .owl-nav .owl-prev {
+	background:transparent;
+	height: 50px!important;
+	width: 50px!important;
+    display: block;
+    position: absolute;
+    text-indent: inherit;
+    left: 0px;
+    top: 50%;
+    width: auto;
+    cursor: pointer;
+    -webkit-transition: opacity 0.3s ease 0s, left 0.3s ease 0s;
+    -moz-transition: opacity 0.3s ease 0s, left 0.3s ease 0s;
+    -ms-transition: opacity 0.3s ease 0s, left 0.3s ease 0s;
+    -o-transition: opacity 0.3s ease 0s, left 0.3s ease 0s;
+    transition: opacity 0.3s ease 0s, left 0.3s ease 0s;
+}
+.slider-section .owl-carousel .owl-nav .owl-next {
+	background:transparent;
+	height: 50px!important;
+	width: 50px!important;
+    display: block;
+    position: absolute;
+    text-indent: inherit;
+    right: 0px;
+    top: 50%;
+    width: auto;
+    cursor: pointer;
+    -webkit-transition: opacity 0.3s ease 0s, right 0.3s ease 0s;
+    -moz-transition: opacity 0.3s ease 0s, right 0.3s ease 0s;
+    -ms-transition: opacity 0.3s ease 0s, right 0.3s ease 0s;
+    -o-transition: opacity 0.3s ease 0s, right 0.3s ease 0s;
+    transition: opacity 0.3s ease 0s, right 0.3s ease 0s;
+}
+
+.slider-section .owl-carousel .owl-dots
+{
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.slider-section .owl-theme .owl-dots .owl-dot span
+{
+	background: #919191;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span
+{
+	background: var(--base-black);
+}
+.slider-section .slider-content
+{
+	display: inline-block;
+    left: 0;
+    position: absolute;
+    text-align: left;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    width: 100%;
+    z-index: 2;
+}
+
+.slider-section .slider-content .slider-title h1
+{
+	font-size: 90px;
+	line-height: 1;
+}
+
+.slider-section .slider-content .slider-label p
+{
+	font-family: "Roboto Condensed";
+	font-size: 26px;
+	line-height: 1;
+}
+.slider-section .slider-content .slider-description p
+{
+	font-size: 22px;
+	line-height: 1.7;
+}
+.slider-section .owl-carousel .owl-nav
+{
+	margin: 0!important;
+}
+.slider-section .owl-carousel .owl-nav button {
+    opacity: 0;
+    transform: scale(1);
+    transition: all 300ms ease-in-out;
+    position: relative;
+}
+.slider-section .owl-carousel .owl-nav button::after {
+    border-radius: 50%;
+    width: 400%;
+    height: 400%;
+    background: radial-gradient(ellipse at center,rgba(255,255,255,.65) 0%,rgba(255,255,255,0) 70%);
+    content: "";
+    font-size: 1em;
+    position: absolute;
+    z-index: -1;
+}
+.slider-section .owl-carousel .owl-nav .owl-next::after {
+	bottom: -80px;
+    left: -60px;
+}
+.slider-section .owl-carousel .owl-nav .owl-prev::after {
+	bottom: -80px;
+    left: -100px;
+}
+
+.slider-section .owl-carousel:hover .owl-nav button {
+    opacity: 0.5;
+    transform: scale(1);
+    transition: all 300ms ease-in-out;
+}
+
+.slider-section .owl-carousel .owl-nav button:hover {
+    transform: scale(1.3);
+    opacity: 1;
+    color: var(--base-black) !important;
+}
+.programs-section
+{
+    z-index: 10;
+    position: relative;
+    bottom: 20px;
+}
+.programs-section .card-parent
+{
+	position: relative;
+}
+.programs-section .card-parent .card-icon
+{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.programs-section .card-parent .card-icon img
+{
+    height: 80px;
+    width: 80px;
+    background: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+.programs-section .card-parent .card-thumbnail img
+{
+	height: 258px;
+    width: 100%;
+    object-fit: cover;
+}
+.programs-section .card-parent .card-body-des
+{
+	padding: 50px 25px 25px 25px;
+}
+
+.programs-section .card-parent .card-body-des .card-description p
+{
+	font-size: 14px;
+}
+.our-comittments-section 
+{
+    padding: 80px 0 100px 0;
+}
+.our-comittments-section .commitment-body
+{
+	padding: 50px 50px 50px 0px;
+}
+.our-comittments-section .commitment-title h1
+{
+	font-size: 42px;
+	line-height: 1;
+}
+.our-comittments-section .commitment-description p
+{
+    font-weight: 300;
+    padding-top: 15px;
+    font-size: 20px;
+    line-height: 28px;
+}
+.our-comittments-section .commitment-thumbnail img
+{
+	width: 100%;
+	height: 315px;
+	object-fit: cover;
+}
+.testimonials-section .testimonials-parent
+{
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.testimonials-section .testimonials-thumbnail
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials-section .testimonials-thumbnail img
+{
+	border-radius: 50%;
+}
+
+.testimonials-section .testimonials-des
+{
+	text-align: center;
+}
+
+.testimonials-section .testimonials-des p
+{
+	color: var(--base-black);
+	font-size: 14px;
+	padding-top: 50px;
+}
+.testimonials-section .testimonials-des h6
+{
+	font-family: 'Roboto',sans-serif;
+	font-weight: 700;
+}
+
+.testimonials-section .slick-next,.testimonials-section .slick-prev 
+{
+    transition: all 300ms ease-in-out;
+    opacity:0 !important;
+    transform: scale(1);
+}
+
+.testimonials-section:hover .slick-next, .testimonials-section:hover .slick-prev 
+{
+    opacity:1 !important;
+}
+.testimonials-section .slick-next:hover,.testimonials-section .slick-prev:hover 
+{
+    transform: scale(1.5);
+}
+.site-map-section .des-wrapper 
+{
+    padding: 50px;
+}
+.site-map-section .des-wrapper p
+{
+    font-size: 14px;
+}
+.testimonials-section .slick-dots li button::before
+{
+	color: var(--base-white);
+}
+.site-map-section .des-wrapper .visit-area .title
+{
+	margin-bottom: 50px;
+	margin-top: 20px;
+}
+.site-map-section .des-wrapper .visit-timings {     
+    margin-bottom: 10px;
+    margin-top: 10px; 
+    border-bottom:1px solid  rgba(255, 255, 255, 0.2);
+}
+
+.site-map-section .des-wrapper .day {
+    padding-right: 28px;
+}
+
+.site-map-section .des-wrapper .time-book {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.site-map-section .des-wrapper .time-book p {
+    margin: 0;
+    padding-right: 30px;
+}
+
+.site-map-section .des-wrapper .book-link {
+	transition: all 300ms ease-in-out;
+	position: relative;
+	bottom: 0;
+	margin-bottom:10px;
+	font-size: 12px;
+    padding: 5px 15px;
+    background-color: var(--base-white);
+    color: var(--base-secondary);
+    text-decoration: none;
+}
+
+.site-map-section .des-wrapper .book-link:hover {
+    bottom: 3px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+}
+.site-map-section .des-wrapper .contact-area .contact-title h3
+{
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+.site-map-section .des-wrapper .contact-area p{
+	font-size: 14px;
+}

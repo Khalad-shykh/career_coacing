@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Responsive Sidebar Menu</title>
+
+      <link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="assets/fonts/icofont/icofont.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="assets/sliders/owlcarousel/css/owl.carousel.min.css">
+     <link rel="stylesheet" href="assets/sliders/owlcarousel/css/owl.theme.default.min.css">
+     <link rel="stylesheet" href="assets/sliders/slickslider/slick/slick.css"/>
+     <link rel="stylesheet" href="assets/sliders/slickslider/slick/slick-theme.css"/>
+     <link rel="stylesheet" type="text/css" href="assets/css/slick-custom.css">
+     <link href="assets/animations/aos-master/dist/aos.css" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+     <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+     
+     
+
+   </head>
+   <body>
+    <header id="header">
+
+      <!-- Navbar Setup -->
+    <div class="header-top">
+        <div class="container">
+          <div class="header-top-inner">
+              <div class="logo">
+                  <img src="https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/Celeste-logo-career.png" alt="logo">
+              </div>
+              <div class="header-top-links">
+                <a href="#">
+                  <div class="link-icon">
+                    <i class="icofont-search-map"></i>
+                  </div>
+                  <div class="link-conent">
+                    <span class="link-title">Address</span>
+                    <span class="link-text">7 Kings Rd, Portsmouth</span>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="link-icon">
+                    <i class="icofont-ui-touch-phone"></i>
+                  </div>
+                  <div class="link-conent">
+                    <span class="link-title">Call us now</span>
+                    <span class="link-text">+44 3069 990134</span>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="link-icon">
+                    <i class="icofont-email"></i>
+                  </div>
+                  <div class="link-conent">
+                    <span class="link-title">Emails Us</span>
+                    <span class="link-text">info@celeste.co.uk</span>
+                  </div>
+                </a>
+              </div>
+          </div>
+      </div>
+      </div>
+      <nav class="navbar navbar-expand-xl navbar-light">
+         <div class="container">
+            <!-- Navbar brand -->
+            <!-- Navbar toggle button -->
+            <button class="navbar-toggler" 
+               type="button" 
+               data-bs-toggle="offcanvas" 
+               data-bs-target="#sidebar"
+               aria-controls="sidebar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+              <div class="logo d-xl-none d-block">
+                  <img src="https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/Celeste-logo-career.png" alt="logo">
+              </div>
+            <!-- Top menu in navbar -->
+            <div class="collapse navbar-collapse" 
+               id="navbarSupportedContent">
+               <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                  <li class="nav-item">
+                     <a class="nav-link active" 
+                        aria-current="page" href="#">
+                     Home
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">
+                     About
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">
+                     COACHING
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">
+                     Portfolio
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">
+                     Blog
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">
+                     Shop
+                     </a>
+                  </li>
+               </ul>
+            </div>
+            <div class="navbar-in-menu d-none d-xl-block">
+                <div class="navbar-in-menu-cell">
+                    <div class="link">
+                    <a href="#"><i class="icofont-facebook"></i></a>
+                    </div>
+                    <div class="link">
+                    <a href="#"><i class="icofont-twitter"></i></a>
+                    </div>
+                    <div class="link">
+                    <a href="#"><i class="icofont-google-plus"></i></a>
+                    </div>
+                    <div class="link">
+                    <a href="#"><i class="icofont-search-1"></i></a>
+                    </div>
+                </div>
+            </div>
+         </div>
+      </nav>
+      <!-- Sidebar Setup -->
+      <div class="offcanvas offcanvas-start" 
+         tabindex="-1" id="sidebar">
+         <div class="offcanvas-header">
+            <button type="button" 
+               class="btn-close text-reset" 
+               data-bs-dismiss="offcanvas" 
+               aria-label="Close">
+            </button>
+              <div class="logo text-center">
+                  <img src="https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/Celeste-logo-career.png" alt="logo">
+              </div>
+              <div class="header-top-links">
+
+                <a href="#">
+                  <div class="link-icon">
+                    <i class="icofont-email"></i>
+                  </div>
+                  <div class="link-conent">
+                    <span class="link-title">Emails Us</span>
+                    <span class="link-text">info@celeste.co.uk</span>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="link-icon">
+                    <i class="icofont-ui-touch-phone"></i>
+                  </div>
+                  <div class="link-conent">
+                    <span class="link-title">Call us now</span>
+                    <span class="link-text">+44 3069 990134</span>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="link-icon">
+                    <i class="icofont-search-map"></i>
+                  </div>
+                  <div class="link-conent">
+                    <span class="link-title">Address</span>
+                    <span class="link-text">7 Kings Rd, Portsmouth</span>
+                  </div>
+                </a>
+
+              </div>
+         </div>
+         <div class="offcanvas-body">
+            <ul class="navbar-nav text-center pt-5 pb-5">
+               <li class="nav-item">
+                  <a class="nav-link" href="#">
+                  Home
+                  </a>
+               </li>
+              <li class="nav-item">
+                 <a class="nav-link" href="#">
+                 About
+                 </a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link" href="#">
+                 COACHING
+                 </a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link" href="#">
+                 Portfolio
+                 </a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link" href="#">
+                 Blog
+                 </a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link" href="#">
+                 Shop
+                 </a>
+              </li>
+            </ul>
+
+            <div class="navbar-in-menu">
+                <div class="navbar-in-menu-cell">
+                    <div class="link">
+                    <a href="#"><i class="icofont-facebook"></i></a>
+                    </div>
+                    <div class="link">
+                    <a href="#"><i class="icofont-twitter"></i></a>
+                    </div>
+                    <div class="link">
+                    <a href="#"><i class="icofont-google-plus"></i></a>
+                    </div>
+                    <div class="link">
+                    <a href="#"><i class="icofont-search-1"></i></a>
+                    </div>
+                </div>
+            </div>
+         </div>
+      </div>
+
+    </header>
+    <div class="main">
+    <section class="slider-section">    
+      <div class="container-fluid">
+        <div class="owl-carousel owl-theme">
+            <div class="item layer-light">
+                <img src="https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/bgn-slider-career-01.jpg">
+                <div class="slider-content">
+                    <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="slider-label">
+                                <p>OUR FREE CAREER TOOLS</p>
+                            </div>
+                            <div class="slider-title">
+                                <h1>Find Your</h1>
+                                <h1 class="txt-secondary">Ideal Career</h1>
+                            </div>
+                            <div class="slider-description">
+                                    <p>Are you stuck in a job you don’t enjoy? Not sure which career direction to take? If you want to have a job you are passionate about, well, you can!</p>
+                            </div>
+                            <div class="slider-buttons">
+                                <button class="bt bt-secondary">LEARN MORE</button>
+                                <button class="bt bt-primary">OUR PROGRAN</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item layer-light">
+                <img src="https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/bgn-slider-career-02.jpg">
+                <div class="slider-content">
+                    <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-6">
+                            <div class="slider-label">
+                                <p>MAKE YOUR PASSION COME TRUE</p>
+                            </div>
+                            <div class="slider-title">
+                                <h1 class="txt-secondary">Plan For</h1>
+                                <h1>Your Success</h1>
+                            </div>
+                            <div class="slider-description">
+                                    <p>Find out for sure whether you’re in the right career. Is your dissatisfaction a passing phase or is it a sign it’s time to move on?</p>
+                            </div>
+                            <div class="slider-buttons">
+                                <button class="bt bt-secondary">VIEW FREE TOOLS</button>
+                                <button class="bt bt-primary">ENROLL THE PROGRAM</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item layer-dark">
+                <img src="https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/bgn-slider-career-03.jpg">
+                <div class="slider-content">
+                    <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="slider-label">
+                                <p class="txt-secondary">WHAT ARE YOUR STRONG POINTS?</p>
+                            </div>
+                            <div class="slider-title">
+                                <h1 class="txt-white">Put it into</h1>
+                                <h1 class="txt-secondary">Prespective</h1>
+                            </div>
+                            <div class="slider-description">
+                                    <p class="txt-white">On the professional scene, many times we may not feel we have the support we need during difficult times. Achieving professional goals can be difficult and stressful.</p>
+                            </div>
+                            <div class="slider-buttons">
+                                <button class="bt bt-secondary">ABOUT COACHING</button>
+                                <button class="bt bt-primary">THE RIGHT ANSWERS</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section> 
+    <section class="programs-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card-parent" data-aos="zoom-out" data-aos-once="false"     data-aos-delay="100"  data-aos-duration="1000">
+                        <div class="card-icon">
+                            <img src="assets/svg/teamwork.svg">
+                        </div>
+                        <div class="card-thumbnail">
+                            <img src="https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/img-box-career-01-1280x854.jpg" alt="card-thumbnail">
+                        </div>
+                        <div class="card-body-des bgr-secondary text-center">
+                            <div class="card-title">
+                                <h3 class="txt-white">Career transition</h3>
+                            </div>
+                            <div class="card-description">
+                                <p class="txt-white">Discovering the right career starts with understanding what drives you. Establish your brand and your strategy for completing career transition</p>
+                            </div>
+                            <div class="card-button">
+                                <button class="bt bt-primary bt-outline">READ MORE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card-parent" data-aos="zoom-out" data-aos-once="false"     data-aos-delay="100" data-aos-duration="1000">
+                        <div class="card-icon">
+                            <img src="assets/svg/humanresources.svg">
+                        </div>
+                        <div class="card-thumbnail">
+                            <img src="https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/img-box-career-02-1280x854.jpg" alt="card-thumbnail">
+                        </div>
+                         <div class="card-body-des bgr-secondary-dark text-center">
+                            <div class="card-title">
+                                <h3 class="txt-white">Career development</h3>
+                            </div>
+                            <div class="card-description">
+                                <p class="txt-white">It’s time to maximize your personal and professional potential. This means being in charge of your career’s direction today.</p>
+                            </div>
+                            <div class="card-button">
+                                <button class="bt bt-primary bt-outline">READ MORE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card-parent" data-aos="zoom-out" data-aos-once="false"     data-aos-delay="100"  data-aos-duration="1000">
+                        <div class="card-icon">
+                            <img src="assets/svg/deal.svg">
+                        </div>
+                        <div class="card-thumbnail">
+                            <img src="https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/img-box-career-03-1280x854.jpg" alt="card-thumbnail">
+                        </div>
+                        <div class="card-body-des bgr-primary text-center">
+                            <div class="card-title">
+                                <h3 class="txt-white">Counseling</h3>
+                            </div>
+                            <div class="card-description">
+                                <p class="txt-white">Your career counselor provides a supportive working relationship to help you understand and embrace your abilities, interests and potential. </p>
+                            </div>
+                            <div class="card-button">
+                                <button class="bt bt-primary bt-outline">READ MORE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="our-comittments-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="commitment-body">
+                    <div class="commitment-title">
+                        <h1 class="txt-secondary">Our commitment</h1>
+                        <h1>means your success</h1>
+                    </div>
+                    <div class="commitment-description">
+                        <p>Our values drive not only our culture and how we work with clients but also how we live our lives. We partner with our clients to achieve their goals and empower transformation by leading with integrity, competence, compassion and heart.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="commitment-thumbnail">
+                        <img src="https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/img-commitment-01-1280x1280.jpg" alt="commitment tumbnail">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials-section padding-top-bottom bg-1">
+    <div class="container">
+        <div class="row">
+            <div class="slide-container">
+            <div class="col-lg-4">
+                <div class="testimonials-parent">
+                    <div class="testimonials-thumbnail">
+                       <img src="https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/img-testimonials-career-04-180x180.jpg"> 
+                    </div>
+                    <div class="testimonials-des">
+                        <p class="txt-white">I wish I’d have known of her services upon leaving college. I would have spent much less time in a professional funk!</p>
+                        <h6 class="txt-white">MONISHA KALTERBORN</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="testimonials-parent">
+                    <div class="testimonials-thumbnail">
+                       <img src="https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/img-testimonials-career-01-180x180.jpg"> 
+                    </div>
+                    <div class="testimonials-des">
+                        <p class="txt-white" class="txt-white">I wish I’d have known of her services upon leaving college. I would have spent much less time in a professional funk!</p>
+                        <h6 class="txt-white" class="txt-white">MONISHA KALTERBORN</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="testimonials-parent">
+                    <div class="testimonials-thumbnail">
+                       <img src="https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/img-testimonials-career-02-180x180.jpg"> 
+                    </div>
+                    <div class="testimonials-des">
+                        <p class="txt-white" class="txt-white">I wish I’d have known of her services upon leaving college. I would have spent much less time in a professional funk!</p>
+                        <h6 class="txt-white" class="txt-white">MONISHA KALTERBORN</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="testimonials-parent">
+                    <div class="testimonials-thumbnail">
+                       <img src="https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/img-testimonials-career-03-180x180.jpg"> 
+                    </div>
+                    <div class="testimonials-des">
+                        <p class="txt-white" class="txt-white">I wish I’d have known of her services upon leaving college. I would have spent much less time in a professional funk!</p>
+                        <h6 class="txt-white" class="txt-white">MONISHA KALTERBORN</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>        
+    </section>
+
+<section class="site-map-section">
+    <div class="container-fluid">
+        <div class="row g-0">
+            <div class="col-lg-4">
+                <div class="des-wrapper bgr-secondary">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="visit-area">
+                                <h3 class="txt-white title">When Can You Visit?</h3>
+                                
+                                <!-- Monday - Wednesday Timings -->
+                                <div class="visit-timings">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <p class="txt-white day">Monday - Wednesday</p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="time-book">
+                                                <p class="txt-white">8AM - 7PM</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="time-book">
+                                                <div class="action">
+                                                <a href="#" class="book-link">Book&nbsp;<i class="icofont-wall-clock"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Thursday Timings -->
+                                <div class="visit-timings">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <p class="txt-white day">Thursday</p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="time-book">
+                                                <p class="txt-white">8AM - 5PM</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="time-book">
+                                                <div class="action">
+                                                <a href="#" class="book-link">Book&nbsp;<i class="icofont-wall-clock"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Friday Timings -->
+                                <div class="visit-timings">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <p class="txt-white day">Friday</p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="time-book">
+                                                <p class="txt-white">8AM - 6PM</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="time-book">
+                                                <div class="action">
+                                                <a href="#" class="book-link">Book&nbsp;<i class="icofont-wall-clock"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Weekend Timings -->
+                                <div class="visit-timings">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <p class="txt-white day">Saturday - Sunday</p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="time-book pe-3">
+                                                <p class="txt-white">Closed</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="contact-area">
+                                <!-- Contact Information -->
+                                <div class="contact-title">
+                                <h3 class="txt-white">How to get in touch?</h3>
+                                </div>
+                                <div class="contact-info">
+                                    <div class="phone">
+                                        <p> <a class="txt-white" href="#"><i class="icofont-ui-call"></i>&nbsp;+44 3069 990134</a></p>
+                                    </div>
+                                    <div class="email">
+                                        <p> <a class="txt-white" href="#"><i class="icofont-envelope"></i>&nbsp;info@celeste.co.uk</a></p>
+                                    </div>
+                                    <div class="address">
+                                        <p> <a class="txt-white" href="#"><i class="icofont-search-map"></i>&nbsp;7 Kings Rd, Portsmouth, Southsea, PO5 4DJ, UK</a></p>
+                                    </div>
+                                   <div class="directions">
+                                       <p> <a class="txt-white" href="#"><i class="icofont-direction-sign"></i>&nbsp;Get directions</a></p> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <!-- Other Content -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2522.0637912121683!2d-1.097645356955328!3d50.79292635187602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48745d9b8dea83b7%3A0x160d24d6053c3d9!2sSt%20Pauls%20Rd!5e0!3m2!1sen!2s!4v1731498697749!5m2!1sen!2s" style="border:0;width: 100%;height: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>        
+</section>
+    </div>    
+<footer>
+    <div class="row">
+        <div class="col-12">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="footer-top-inner">
+                                <div class="footer-logo">
+                                    <img src="https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/Celeste-logo-career.png">
+                                </div>
+                                <div class="social-links d-lg-flex">
+                                    <div class="d-lg-flex align-items-center">
+                                    <span>Visit us on social networks:</span>
+                                    </div>
+                                    <div>
+                                    <a href="#"><i class="icofont-facebook"></i></a>
+                                    <a href="#"><i class="icofont-twitter"></i></a>
+                                    <a href="#"><i class="icofont-google-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-middle">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="footer-middle-inner">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                        <div class="footer-middle-heading">
+                                            <h4 class="txt-white">Contact us anytime</h4>
+                                        </div>
+                                        <div class="footer-middle-links">
+                                            <p><a href="#"><i class="icofont-ui-call"></i>&nbsp;+44 3069 990134</a></p>
+                                            <p><a href="#"> <i class="icofont-envelope"></i>&nbsp;info@celeste.co.uk</a></p>
+                                            <p><a class="txt-white" href="#"><i class="icofont-search-map"></i>&nbsp;7 Kings Rd, Portsmouth, Southsea, PO5 4DJ, UK</a></p>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                        <div class="footer-middle-heading">
+                                            <h4 class="txt-white">More about Celeste</h4>
+                                        </div>
+                                        <div class="footer-middle-links">
+                                            <p><a href="#">About Us</a></p>
+                                            <p><a href="#">Management Team</a></p>
+                                            <p><a class="txt-white" href="#">Contact</a></p>
+                                            <p><a class="txt-white" href="#">Location</a></p>
+                                            <p><a class="txt-white" href="#">Pricing</a></p>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                        <div class="footer-middle-heading">
+                                            <h4 class="txt-white">Latest news</h4>
+                                        </div>
+                                        <div class="footer-middle-links">
+                                            <p><a href="#">Thoughts on Procrastination</a></p>
+                                            <p><a href="#">People who made inspiring life changes</a></p>
+                                            <p><a class="txt-white" href="#">The incredible power of small changes</a></p>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                        <div class="footer-middle-heading">
+                                            <h4 class="txt-white">Latest courses</h4>
+                                        </div>
+                                        <div class="footer-middle-links">
+                                            <p><a href="#">What is life coaching</a></p>
+                                            <p><a href="#">Life coaching and your family</a></p>
+                                            <p><a class="txt-white" href="#">Find your life purpose</a></p>
+                                            <p><a href="#">Tap into endless motivation</a></p>
+                                            <p><a class="txt-white" href="#">Coaching focuses on your future</a></p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-end">
+                <div class="container" style="padding: 0!important;">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="footer-end-inner">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <p class="txt-white">Copyright by <b>BoldThemes</b>. All rights reserved.</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="footer-end-links text-end">
+                                            <a href="#">About Us</a>
+                                            <a href="#">Management Team</a>
+                                            <a href="#">Contact</a>
+                                            <a href="#">Location</a>
+                                            <a href="#">Pricing</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer> 
+      <!-- Include Bootstrap JavaScript -->
+      <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+      <script type="text/javascript" src="assets/bootstrap/popper.min.js"></script>
+      <script type="text/javascript" src="assets/bootstrap/bootstrap.min.js"></script>
+      <script type="text/javascript" src="assets/sliders/owlcarousel/js/owl.carousel.min.js"></script>
+      <script type="text/javascript" src="assets/sliders/slickslider/slick/slick.min.js"></script>
+      <script type="text/javascript" src="assets/animations/aos-master/dist/aos.js"></script>
+      <script type="text/javascript" src="assets/js/main.js"></script>
+      <script type="text/javascript" src="assets/js/index.js"></script>
+   </body>
+</html>
