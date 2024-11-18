@@ -1,5 +1,8 @@
 
 /*index css*/
+.logo-img{
+    height: 100px;
+}
 .slider-section
 {
 	overflow: hidden;
@@ -54,7 +57,7 @@
 }
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span
 {
-	background: var(--base-black);
+	background: var(--base-white);
 }
 .slider-section .slider-content
 {
@@ -129,6 +132,21 @@
     opacity: 1;
     color: var(--base-black) !important;
 }
+.slider-section .owl-carousel .owl-item .item.layer-light::before,
+.slider-section .owl-carousel .owl-item .item.layer-dark::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.slider-section .owl-carousel .owl-item .item.layer-light::before {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.slider-section .owl-carousel .owl-item .item.layer-dark::before {
+    background-color: rgba(0, 0, 0, 0.5);
+}
 .programs-section
 {
     z-index: 10;
@@ -138,6 +156,7 @@
 .programs-section .card-parent
 {
 	position: relative;
+    padding-bottom:15px;
 }
 .programs-section .card-parent .card-icon
 {
@@ -309,4 +328,41 @@
 {
     width: 100%;
     height: 100%;
+}
+
+.section-site-description .site-card
+{
+    background-color: var(--base-secondary);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 40px;
+    margin-bottom: 15px;
+/*    border-radius: 5px;*/
+}
+.section-site-description .site-card h2
+{
+    font-weight: 100;
+}
+.section-site-description .site-card h2::after
+{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin-top: 10px;
+    background: var(--base-white);
+    border-radius: 50px;
+    transition: all 300ms ease-in-out;
+}
+.section-site-description .site-card h2:hover::after
+{
+    background: var(--base-primary);
+}
+.section-site-description .site-card .site-card-header
+{
+    margin-bottom: 30px;
+}
+.section-site-description .site-card p
+{
+    font-size: 14px;
 }
