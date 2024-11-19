@@ -24,6 +24,9 @@ a
 h1, h2, h3, h4, h5, h6 {
     font-family: "Playfair Display";
 }
+.logo-img{
+    height: 100px;
+}
 .container
 {
 	max-width: 1240px!important;
@@ -377,7 +380,12 @@ h1, h2, h3, h4, h5, h6 {
 {
 	font-size: 18px;
 }
-
+.bg-about
+{
+    background: url('../images/backgrounds/about-us.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /*footer css */
 
 footer
