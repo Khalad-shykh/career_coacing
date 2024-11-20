@@ -1,10 +1,10 @@
 $(document).ready(function () {
     const headerTop = $(".header-top");
     const navbar = $("#header .navbar");
-    const sections = $("section"); // Adjust selector if necessary
+    const sections = $("section");
 
     function updateScrollMargin() {
-        let navbarHeight = navbar.outerHeight(true); // Get the navbar height
+        let navbarHeight = navbar.outerHeight(true);
         let headerTopHeight = headerTop.is(":visible") ? headerTop.outerHeight(true) : 0;
         let scrollMarginTop = navbarHeight + headerTopHeight;
 
@@ -13,7 +13,6 @@ $(document).ready(function () {
         });
     }
 
-    // Run the function on scroll and resize
     $(window).on("scroll resize", function () {
         if (window.matchMedia("only screen and (min-width: 1200px)").matches) {
             if ($(window).scrollTop() >= headerTop.outerHeight(true) + 120) {
@@ -29,9 +28,8 @@ $(document).ready(function () {
             navbar.removeClass("fixed-navigation");
         }
 
-        updateScrollMargin(); // Adjust scroll margin dynamically
+        updateScrollMargin(); 
     });
 
-    // Initial setup
     updateScrollMargin();
 });
