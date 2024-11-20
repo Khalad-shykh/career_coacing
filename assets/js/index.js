@@ -30,6 +30,7 @@ $('.slide-container').slick({
     breakpoint: 767,
     settings: {
       slidesToShow: 1,
+      dots:false,
     }
   }
 ]

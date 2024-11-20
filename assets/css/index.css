@@ -403,3 +403,18 @@
 {
     font-size: 18px;
 }
+.gallery-section .slick-slide img {
+    border: 10px white solid;
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
+}
+.gallery-section .gallery-parent
+{
+    padding:50px;
+}
+.gallery-section .slick-dots li button:before
+{
+    color: var(--base-white);
+}

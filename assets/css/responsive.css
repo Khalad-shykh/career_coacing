@@ -53,6 +53,14 @@
         border: none;
         margin: 0 0 30px 0;
     }
+    .contact-header .contact-wrapper .contact-wrapper-header h1
+    {
+        line-height: 1;
+    }
+    .contact-header .contact-wrapper .contact-wrapper-header span
+    {
+        line-height: 1;
+    }
 }
 
 /* Large devices (desktops, 768px to 991px) */
