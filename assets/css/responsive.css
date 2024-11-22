@@ -36,8 +36,11 @@
     .our-comittments-section .commitment-body {
         padding: 0;
     }
+    .our-comittments-section .commitment-body.first {
+        margin: 0;
+    }
     .our-comittments-section .commitment-title h1 {
-        font-size: 36px;
+        font-size: 22px;
     }
     .our-comittments-section .commitment-description p {
         font-size: 18px;
