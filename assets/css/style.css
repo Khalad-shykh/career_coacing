@@ -85,6 +85,10 @@ ul,ol
 {
 	color: var(--base-white)!important;
 }
+.txt-primary
+{
+	color: var(--base-primary)!important;
+}
 .bgr-primary
 {
 	background-color: var(--base-primary)!important;

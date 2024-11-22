@@ -26,6 +26,11 @@
     .slider-section .owl-carousel .owl-nav button {
         display: none !important;
     }
+    .gemstones-section .gemstones-content h3
+    {
+        font-size: 30px;
+        line-height: 42px;
+    }
 }
 
 /* Medium devices (tablets, 576px to 767px) */
