@@ -1,5 +1,9 @@
 /* X-Small devices (phones, less than 576px) */
 @media (max-width: 575px) {
+    .main
+    {
+        overflow: hidden;
+    }
     .slider-section .slider-content .slider-buttons button {
         width: 100%;
         margin-bottom: 10px;
