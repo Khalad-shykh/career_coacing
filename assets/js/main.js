@@ -34,9 +34,13 @@ $(document).ready(function () {
     updateScrollMargin();
 
 $('.offcanvas .nav-link').on('click', function() {
-    const sidebar = $('#sidebar')[0]; // Get the DOM element
-    const bsOffcanvas = bootstrap.Offcanvas.getInstance(sidebar);
-    bsOffcanvas.hide(); // Hides the sidebar
+    if(!$(this).hasClass('dropdown-toggle'))
+    {
+        const sidebar = $('#sidebar')[0]; 
+        const bsOffcanvas = bootstrap.Offcanvas.getInstance(sidebar);
+        bsOffcanvas.hide();
+    }
+
 });
 
 });
